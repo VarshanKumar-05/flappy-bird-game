@@ -64,20 +64,31 @@
 	color: gold;
 	font-weight: bold;
 }
-@media only screen and (max-width: 1080px) {
-    .message{
-		font-size: 50px;
-		top: 50%;
-		white-space: nowrap;
-	}
-	.score{
-		font-size: 8vh;
-	}
-	.bird{
-		width: 120px;
-		height: 90px;
-	}
-	.pipe_sprite{
-		width: 14vw;
-	}
+@media only screen and (max-width: 768px) {
+    .message {
+        font-size: 5vw;
+        top: 50%;
+        white-space: nowrap;
+    }
+
+    .score {
+        font-size: 8vw;
+    }
+
+    .bird {
+        width: 80px;
+        height: 60px;
+        left: 20vw;
+    }
+
+    .pipe_sprite {
+        width: 12vw;
+    }
+}
+html, body {
+    touch-action: manipulation;
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
