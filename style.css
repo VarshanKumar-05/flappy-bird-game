@@ -22,18 +22,14 @@
 	z-index: 100;
 }
 .pipe_sprite {
-    position: fixed;
-    top: 40vh;
-    left: 80vw;
-    height: 40vh;         /* 🔽 Decreased height */
-    width: 4vw;           /* 🔽 Decreased width */
-    max-width: 50px;      /* 🔒 Limits max size */
-    min-width: 20px;      /* 🔒 Ensures not too thin */
-    background: radial-gradient(lightgreen 50%, green);
-    border: 3px solid black;
-    z-index: 5;
+	position: fixed;
+	top: 40vh;
+	left: 80vw;
+	height: 60vh;
+	width: 6vw;
+	background:radial-gradient(lightgreen 50%, green);
+	border: 5px solid black;
 }
-
 .message {
 	position: absolute;
 	z-index: 10;
@@ -68,27 +64,6 @@
 	color: gold;
 	font-weight: bold;
 }
-@media only screen and (max-width: 768px) {
-    .pipe_sprite {
-        width: 8vw;
-        height: 30vh;        /* 🔽 Shorter pipes on mobile */
-        max-width: 40px;
-    }
-
-    .bird {
-        width: 70px;
-        height: 60px;
-    }
-
-    .score {
-        font-size: 8vw;
-    }
-
-    .message {
-        font-size: 6vw;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .message {
         font-size: 5vw;
