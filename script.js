@@ -34,6 +34,21 @@ document.addEventListener('keydown', (e) => {
         play();
     }
 });
+// Allow tap to start the game
+document.addEventListener('touchstart', () => {
+    if (game_state != 'Play') {
+        document.querySelectorAll('.pipe_sprite').forEach((e) => e.remove());
+        img.style.display = 'block';
+        bird.style.top = '40vh';
+        game_state = 'Play';
+        message.innerHTML = '';
+        score_title.innerHTML = 'Score : ';
+        score_val.innerHTML = '0';
+        message.classList.remove('messageStyle');
+        play();
+    }
+});
+
 
 function play(){
     function move(){
@@ -83,6 +98,19 @@ function play(){
                 img.src = 'images/Bird.png';
             }
         });
+// Allow tap to make the bird fly
+document.addEventListener('touchstart', () => {
+    if (game_state == 'Play') {
+        img.src = 'images/Bird-2.png';
+        bird_dy = -7.6;
+        setTimeout(() => {
+            img.src = 'images/Bird.png';
+        }, 100);
+    }
+});
+document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
 
         if(bird_props.top <= 0 || bird_props.bottom >= background.bottom){
             game_state = 'End';
