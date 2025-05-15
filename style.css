@@ -6,7 +6,7 @@
 }
 .pipe_sprite {
     position: fixed;
-    top: 40vh;
+    top: 30vh;
     left: 80vw;
     height: 60vh;
     width: 6vw;
@@ -15,7 +15,7 @@
 }
 .pipe_sprite {
     position: fixed;
-    top: 40vh;
+    top: 30vh;
     left: 80vw;
     height: 60vh;
     width: 6vw;
@@ -131,6 +131,30 @@
 html, body {
     touch-action: manipulation;
 }
+@media only screen and (max-width: 768px) {
+    .pipe_sprite {
+        width: 8vw;         /* 🔽 Narrower pipe */
+        height: 30vh;       /* 🔽 Shorter pipe */
+        max-width: 40px;
+        min-width: 20px;
+    }
+
+    .bird {
+        width: 70px;
+        height: 60px;
+    }
+
+    .score {
+        font-size: 8vw;
+    }
+
+    .message {
+        font-size: 6vw;
+        top: 50%;
+        white-space: nowrap;
+    }
+}
+
 * {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
