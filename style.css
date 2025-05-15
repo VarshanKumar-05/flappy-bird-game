@@ -4,6 +4,27 @@
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 }
+.pipe_sprite {
+    position: fixed;
+    top: 40vh;
+    left: 80vw;
+    height: 60vh;
+    width: 6vw;
+    background: radial-gradient(lightgreen 50%, green);
+    border: 5px solid black;
+}
+.pipe_sprite {
+    position: fixed;
+    top: 40vh;
+    left: 80vw;
+    height: 60vh;
+    width: 6vw;
+    max-width: 60px;
+    min-width: 30px;
+    background: radial-gradient(lightgreen 50%, green);
+    border: 3px solid black;
+}
+
 .background {
 	height: 100vh;
 	width: 100vw;
@@ -64,6 +85,28 @@
 	color: gold;
 	font-weight: bold;
 }
+@media only screen and (max-width: 768px) {
+    .pipe_sprite {
+        width: 10vw;
+        max-width: 40px;
+        height: 45vh;
+    }
+
+    .bird {
+        width: 80px;
+        height: 60px;
+    }
+
+    .message {
+        font-size: 6vw;
+        white-space: nowrap;
+    }
+
+    .score {
+        font-size: 9vw;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .message {
         font-size: 5vw;
