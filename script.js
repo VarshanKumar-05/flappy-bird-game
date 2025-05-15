@@ -127,7 +127,7 @@ document.addEventListener('gesturestart', function (e) {
 
     let pipe_seperation = 0;
 
-    let pipe_gap = window.innerWidth < 768 ? 45 : 35;
+    let pipe_gap = 35;
 
     function create_pipe(){
         if(game_state != 'Play') return;
