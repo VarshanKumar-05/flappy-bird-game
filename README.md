@@ -4,6 +4,7 @@ A classic **Flappy Bird** clone built with pure **HTML**, **CSS**, and **JavaScr
 Flappy Bird is a simple side-scrolling game where you control a bird and navigate it through a series of pipes by tapping or pressing a key to make the bird flap and stay airborne. The goal is to pass through as many pipes as possible without crashing.
 
 website link: https://varshankumar-05.github.io/flappy-bird-game/
+
 ![Screenshot 2025-05-29 104031](https://github.com/user-attachments/assets/01fbbbbd-4e79-4d42-83f3-cd3f52afb8ef)
 
 
